@@ -1,0 +1,1393 @@
+@charset "UTF-8";
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-9%27");
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-9%27");
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+html a,
+body a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  nav .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #555;
+    padding: 0 12.5vw;
+  }
+  nav .logo img {
+    height: 3.3vh;
+    padding: 1.5vh 0;
+  }
+  nav .logo .login {
+    text-align: right;
+  }
+  nav .logo .login div {
+    background-color: #f3f3f3;
+    display: inline-block;
+    padding: 0.8vh 0.5vw;
+    border-radius: 0 0 5px 5px;
+    font-size: smaller;
+    color: #555;
+  }
+  nav .logo .login div a {
+    font-size: smaller;
+  }
+  nav .logo .login div a i {
+    padding: 0 0.2vw 0 0.7vw;
+  }
+  nav .logo .login div a:hover {
+    text-decoration: underline;
+  }
+  nav .logo .login div:hover {
+    cursor: pointer;
+  }
+  nav .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #dc312e;
+    padding: 0em 11vw;
+    font-size: 1em;
+  }
+  nav .menu div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 0;
+    margin: 0 0.5vw;
+  }
+  nav .menu div:first-child a {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    padding: 0.8em 1em;
+    cursor: pointer;
+  }
+  nav .menu div:first-child a:hover {
+    transition: ease-in-out 0.2s;
+    background-color: white;
+    color: #dc312e;
+  }
+  nav .menu div:first-child a:hover span {
+    transition: ease-in-out 0.2s;
+    color: #555;
+  }
+  nav .menu div:first-child a span {
+    font-weight: 600;
+    font-size: 0.7em;
+  }
+  nav .menu div:last-child {
+    text-align: right;
+  }
+  nav .menu div:last-child a:first-child {
+    display: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 0.9em;
+    margin-top: 0.7em;
+    padding: 0.8em 1em;
+    margin-right: 1vw;
+    font-weight: 600;
+    color: #555;
+    transition: ease-in-out 0.25s;
+  }
+  nav .menu div:last-child a:first-child:hover {
+    margin-top: 0.5em;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.55);
+  }
+  nav .menu div:last-child a:last-child {
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    padding: 0.8em 1em;
+    font-size: 0.9em;
+    margin-top: 0.7em;
+    font-weight: 600;
+    color: #dc312e;
+    transition: ease-in-out 0.25s;
+  }
+  nav .menu div:last-child a:last-child span {
+    color: #555;
+  }
+  nav .menu div:last-child a:last-child:hover {
+    margin-top: 0.5em;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.55);
+  }
+  nav .menu div:last-child a:last-child i {
+    padding: 0 0 0 0.3vw;
+  }
+  .container {
+    background-image: url("assets/imgs/carheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1vh;
+  }
+  .container h1 {
+    padding: 6vh 13vw 0 13vw;
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: inherit;
+    font-size: 1.4em;
+    color: #dc312e;
+  }
+  .container h1 span {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: inherit;
+    font-size: 0.5em;
+    color: #555;
+  }
+  .container .barravertical {
+    display: inline;
+    color: #fff;
+    position: fixed;
+    text-align: right;
+    border-width: 1px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-family: "Helvetica Neue", sans-serif;
+    padding: 0.8vh 0.9vw;
+    text-decoration: none;
+    rotate: -90deg;
+    background-color: #555;
+    border-color: #fff;
+    border-style: solid solid none solid;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
+    right: -53px;
+    top: 208px;
+  }
+  .container .barravertical:hover {
+    cursor: pointer;
+  }
+  .container .barravertical b {
+    font-weight: 700;
+  }
+  .container .pesquisa {
+    display: flex;
+    flex-direction: row;
+    padding: 0 13vw;
+    list-style: none;
+    margin: 0;
+    opacity: 1;
+  }
+  .container .pesquisa li {
+    background-color: rgba(243, 243, 243, 0.801);
+    font-size: x-small;
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #555;
+    margin-top: 7vh;
+    padding: 2vh 1vw 0 1vw;
+  }
+  .container .pesquisa li:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #dc312e;
+  }
+  .container .pesquisa li i {
+    font-size: 2vh;
+    padding: 0 0 1.5vh 0;
+    text-align: center;
+    opacity: 1;
+  }
+  .container .pesquisa li a {
+    text-align: center;
+    opacity: 1;
+  }
+  .container .pesquisa .triangle {
+    width: 0px;
+    height: 0px;
+    border-width: 8vh 0 0 8vh;
+    border-color: transparent transparent transparent rgba(242, 242, 242, 0.801);
+    transform: rotate(0deg);
+    background-color: transparent;
+    border-style: solid;
+    padding: 0;
+  }
+  .container .pesquisa .triangle:hover {
+    cursor: default;
+  }
+  .container .search {
+    opacity: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(243, 243, 243, 0.801);
+    margin: 0 15vw 1vh 13vw;
+    font-size: 1.7vh;
+    text-align: center;
+  }
+  .container .search .seleção {
+    text-align: left;
+    width: 20%;
+    opacity: 1;
+    margin: 2vh 1vw 2vh 1vw;
+    background-color: #fff;
+    padding: 1vh 0.7vw 1vh 0.7vw;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    color: #999;
+  }
+  .container .search .seleção i {
+    display: flex;
+    float: right;
+    opacity: 0.7;
+  }
+  .container .search .seleção:hover {
+    cursor: pointer;
+  }
+  .container .search #Escolhamodelo {
+    background-color: #eeeeeb;
+  }
+  .container .search #Escolhamodelo:hover {
+    cursor: not-allowed;
+  }
+  .container .search .Resultados {
+    color: #fff;
+    border: none;
+    width: 20%;
+    margin: 1.8vh 1vw;
+    padding: 1.3vh 0 1vh 0;
+    font-size: 1.7vh;
+    background-color: #dc312e;
+  }
+  .container .search .Resultados i {
+    display: inline;
+    padding-left: 0.5vw;
+  }
+  .container .search .Resultados:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0px 7px 15px 1px rgba(220, 49, 46, 0.5);
+  }
+  .container .Anunciar {
+    display: none;
+  }
+  .Opções {
+    padding: 4vh 14vw;
+    color: #555;
+    font-weight: 400;
+    font-size: 1.7vh;
+  }
+  .Opções span {
+    font-weight: 700;
+    color: #555;
+  }
+  .Cards {
+    display: grid;
+    padding: 0 13vw 0 13vw;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 3vh;
+    -moz-column-gap: 2.3vw;
+         column-gap: 2.3vw;
+    margin: 0;
+  }
+  .Cards .Detalhes {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.7vh;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  }
+  .Cards .Detalhes:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0px 7px 15px 0px rgba(85, 85, 85, 0.9);
+  }
+  .Cards .Detalhes .Preço {
+    background-color: #dc312e;
+    position: absolute;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin: -0.3vh 0 0 -0.3vw;
+    padding: 0.5vh 0.5vw;
+  }
+  .Cards .Detalhes img {
+    height: 24vh;
+    margin-top: 0;
+    margin-bottom: 1vh;
+  }
+  .Cards .Detalhes a b {
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding-left: 1vw;
+  }
+  .Cards .Detalhes a span {
+    padding: 0 1vw;
+    padding-top: 2vh;
+  }
+  .Cards .Detalhes a span p {
+    margin: 0;
+    padding: 0 0 0 1vw;
+  }
+  .Botão1 {
+    width: auto;
+    margin-top: 7vh;
+    margin-left: 43vw;
+    vertical-align: middle;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border: none;
+    padding: 1.5vh 1.5vw;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #555;
+    font-size: 1.7vh;
+  }
+  .Botão1:hover {
+    color: #dc312e;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 15px 15px -4px rgba(0, 0, 0, 0.54);
+  }
+  footer {
+    margin-top: 15vh;
+    border-top: 2px solid #555;
+    background-color: #f3f3f3;
+  }
+  footer .Media {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+  }
+  footer .Media .Notícias {
+    width: 37%;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #555;
+  }
+  footer .Media .Notícias span {
+    color: #dc312e;
+  }
+  footer .Media .Notícias a {
+    margin-left: 13vw;
+    font-size: 1.7vh;
+    font-weight: 700;
+  }
+  footer .Media .Notícias a i {
+    padding-right: 0.5vw;
+  }
+  footer .Media .Notícias li {
+    margin-left: 11.5vw;
+    font-size: 1.3vh;
+    padding-bottom: 1vh;
+    list-style-type: none;
+  }
+  footer .Media .Notícias li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  footer .Media .Notícias li i {
+    font-size: 1vh;
+    padding-right: 0.3vw;
+  }
+  footer .Media .email {
+    font-family: "Helvetica Neue", sans-serif;
+    color: #555;
+    font-size: 1.7vh;
+    font-weight: 700;
+    margin-left: 5vw;
+  }
+  footer .Media .email a {
+    margin-left: 3vw;
+  }
+  footer .Media .email a span {
+    color: #dc312e;
+  }
+  footer .Media .email form {
+    margin-top: 2vh;
+  }
+  footer .Media .email form input {
+    width: 15vw;
+    padding: 1vh 1vw;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.7vh;
+    margin: 0;
+    color: #555;
+    opacity: 0.7;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+  footer .Media .email form button {
+    background-color: #dc312e;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 1.7vh;
+    margin-left: 0.2vw;
+    padding: 0.8vh 0.5vw;
+  }
+  footer .Media .email form button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 1px 6px 15px -2px rgba(220, 49, 46, 0.75);
+  }
+  footer .Media .Redes {
+    font-size: 1.7vh;
+    font-weight: 700;
+    color: #555;
+    margin-left: 20vw;
+  }
+  footer .Media .Redes span {
+    color: #dc312e;
+  }
+  footer .Media .Redes i {
+    opacity: 0.8;
+    font-size: 4vh;
+    margin: 1vh 0 0 0.7vw;
+    color: #3b5998;
+  }
+  footer .Media .Redes i:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #23527c;
+  }
+  footer .Media .Redes a {
+    opacity: 0.8;
+    font-size: 4vh;
+    margin: 1vh 0 0 0.7vw;
+    color: #55acee;
+  }
+  footer .Media .Redes a:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #337ab7;
+  }
+  footer .Informação {
+    border-top: 1px solid #e4e1de;
+    margin: 0 13vw 0 13vw;
+    color: #555;
+    font-family: "Helvetica Neue", sans-serif;
+    padding: 3vh 0 4vh 0;
+  }
+  footer .Informação b {
+    padding-left: 15vw;
+    font-size: 1.7vh;
+    font-weight: 700;
+  }
+  footer .Informação p {
+    margin: 0;
+    padding: 0;
+    line-height: 2vh;
+    font-size: 1.2vh;
+    padding-left: 21.5vw;
+  }
+  footer .Informação p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  footer .Informação span {
+    line-height: 2vh;
+    font-size: 1.2vh;
+  }
+  footer .Informação span b {
+    padding-left: 27vw;
+    font-weight: 100;
+    line-height: 2vh;
+    font-size: 1.2vh;
+  }
+  footer .Informação span .Texto {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  footer .Informação span a {
+    margin-top: 1vh;
+    margin-left: 10vw;
+  }
+  footer .Informação span a span {
+    font-weight: bold;
+  }
+  footer .fim {
+    background-color: #555;
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+  footer .fim img {
+    padding: 3vh 0 4vh 13vw;
+    width: 14.5vh;
+  }
+  footer .fim ul {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-size: 1.3vh;
+    padding-top: 2vh;
+    padding-left: 15vw;
+    list-style: none;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+  }
+  footer .fim ul li {
+    padding: 0 0.2vw 0 0.2vw;
+  }
+  footer .fim ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  footer .fim ul span {
+    font-size: 1.3vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  footer .fim span {
+    color: white;
+    font-size: 1.3vh;
+    padding-left: 22vw;
+  }
+  #Venda {
+    margin: 20vh 5vw 0 5vw;
+    color: #dc312e;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #f3f3f0;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 5vh 3vw;
+    border: 2px solid rgba(128, 128, 128, 0.501);
+  }
+  #Venda span {
+    font-size: medium;
+    color: #555;
+    font-weight: 100;
+  }
+  #Venda .Inputs ul {
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #Venda .Inputs ul li {
+    list-style-type: none;
+    font-size: medium;
+    color: #555;
+    margin: 3vh 3vw;
+    font-weight: 700;
+  }
+  #Venda .Inputs ul li input {
+    margin: 1vh 0.2vw;
+    border-radius: 2px;
+    height: 3vh;
+    border: 0.5px rgba(128, 128, 128, 0.623) solid;
+  }
+  #Venda .Inputs ul li span {
+    color: #dc312e;
+    font-size: medium;
+    margin-left: 0.3vw;
+  }
+  #Venda .Inputs ul li .Calcular {
+    color: #fff;
+    border: none;
+    width: 50%;
+    padding: 2vh 0;
+    margin-top: 1vh;
+    margin-left: 0.2vw;
+    font-size: larger;
+    font-weight: 700;
+    background-color: #dc312e;
+  }
+  #Venda .Inputs ul li .Calcular:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0px 7px 15px 1px rgba(220, 49, 46, 0.5);
+  }
+  #Venda .Output {
+    display: none;
+    margin-top: 10vh;
+  }
+  #Venda .Output ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5vw;
+  }
+  #Venda .Output ul section {
+    cursor: pointer;
+    width: auto;
+    font-size: larger;
+  }
+  #Venda .Output ul section .info {
+    opacity: 0;
+    transition: ease-in-out 0.2s;
+    padding-bottom: 2vh;
+    color: #555;
+  }
+  #Venda .Output ul section .info h4 {
+    font-size: medium;
+    font-weight: 700;
+  }
+  #Venda .Output ul section h1 {
+    color: black;
+    font-size: xx-large;
+  }
+  #Venda .Output ul section:hover .info {
+    opacity: 1;
+  }
+  #Venda .Output ul section li {
+    font-size: larger;
+    color: #dc312e;
+    list-style-type: none;
+    padding: 3vh 0 0 5vw;
+    border-radius: 10px;
+  }
+  #Venda .Output ul section li:hover {
+    transition: 0.7s;
+    background-color: rgba(197, 186, 186, 0.514);
+  }
+  #Venda #Financiamento {
+    display: none;
+  }
+  #Venda #Financiamento h1 {
+    color: #555;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    margin-top: 15vh;
+    font-size: larger;
+    text-align: center;
+  }
+  #Venda #Financiamento .InputsF {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10vh;
+    margin-left: 5vw;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento {
+    margin-left: 10vw;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento a {
+    color: #555;
+    font-size: medium;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento a span {
+    color: #dc312e;
+    font-size: medium;
+    margin-left: 0.3vw;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento a .BotaoFinanciamento {
+    color: #fff;
+    border: none;
+    width: 50%;
+    padding: 2vh 0;
+    margin-top: 1vh;
+    margin-left: 0.2vw;
+    font-size: larger;
+    font-weight: 700;
+    background-color: #dc312e;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento a .BotaoFinanciamento:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0px 7px 15px 1px rgba(220, 49, 46, 0.5);
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento input {
+    height: 3vh;
+    margin-left: 0.2vw;
+  }
+  #Venda #Resultado {
+    display: none;
+    margin-top: 15vh;
+  }
+  #Venda #Resultado ul {
+    display: flex;
+    flex-direction: row;
+  }
+  #Venda #Resultado ul li {
+    width: 100%;
+    margin-right: 3vw;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(197, 186, 186, 0.514);
+    border-radius: 10px;
+  }
+  #Venda #Resultado ul li h3 {
+    font-size: larger;
+    text-align: center;
+  }
+  #Venda #Resultado ul li h4 {
+    margin-left: 3vw;
+    color: #555;
+    font-size: medium;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav .logo {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+  }
+  nav .logo img {
+    height: 2.5vh;
+    padding: 1vh 0;
+  }
+  nav .logo .login {
+    text-align: right;
+    display: none;
+  }
+  nav .logo .login div {
+    background-color: #f3f3f3;
+    display: inline-block;
+    padding: 0.8vh 0.5vw;
+    border-radius: 0 0 5px 5px;
+    font-size: smaller;
+    color: #555;
+  }
+  nav .logo .login div a {
+    font-size: smaller;
+  }
+  nav .logo .login div a i {
+    padding: 0 0.2vw 0 0.7vw;
+  }
+  nav .logo .login div a:hover {
+    text-decoration: underline;
+  }
+  nav .logo .login div:hover {
+    cursor: pointer;
+  }
+  nav .menu {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    background-color: #dc312e;
+    padding: 0em 11vw;
+    font-size: 1em;
+  }
+  nav .menu div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 0;
+    margin: 0 0.5vw;
+  }
+  nav .menu div:first-child a {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    padding: 0.8em 0;
+    cursor: pointer;
+  }
+  nav .menu div:first-child a:hover {
+    transition: ease-in-out 0.2s;
+    background-color: white;
+    color: #dc312e;
+  }
+  nav .menu div:first-child a:hover span {
+    transition: ease-in-out 0.2s;
+    color: #555;
+  }
+  nav .menu div:first-child a span {
+    font-weight: 600;
+    font-size: 0.7em;
+  }
+  nav .menu div:last-child {
+    text-align: right;
+  }
+  nav .menu div:last-child a {
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    padding: 0.8em 1em;
+    font-size: 0.9em;
+    margin-top: 0.7em;
+    font-weight: 600;
+    color: #dc312e;
+    transition: ease-in-out 0.25s;
+  }
+  nav .menu div:last-child a span {
+    color: #555;
+  }
+  nav .menu div:last-child a:hover {
+    margin-top: 0.5em;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.55);
+  }
+  nav .menu div:last-child a i {
+    padding: 0 0 0 0.3vw;
+  }
+  .container {
+    background-image: url("assets/imgs/carheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container h1 {
+    margin: 0;
+    padding: 5vh 0 0 5vw;
+    width: 100%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: inherit;
+    font-size: 3.2vh;
+    color: #dc312e;
+  }
+  .container h1 span {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: inherit;
+    font-size: 0.5em;
+    color: #555;
+  }
+  .container .barravertical {
+    display: none;
+    color: #fff;
+    position: fixed;
+    text-align: right;
+    border-width: 1px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-family: "Helvetica Neue", sans-serif;
+    padding: 0.8vh 0.9vw;
+    text-decoration: none;
+    rotate: -90deg;
+    background-color: #555;
+    border-color: #fff;
+    border-style: solid solid none solid;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
+    right: -53px;
+    top: 208px;
+  }
+  .container .barravertical:hover {
+    cursor: pointer;
+  }
+  .container .barravertical b {
+    font-weight: 700;
+  }
+  .container .pesquisa {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    opacity: 1;
+  }
+  .container .pesquisa li {
+    background-color: rgba(243, 243, 243, 0.801);
+    font-size: x-small;
+    text-align: center;
+    width: 30%;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #555;
+    margin-top: 7vh;
+    padding: 2vh 1vw 0 1vw;
+  }
+  .container .pesquisa li:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #dc312e;
+  }
+  .container .pesquisa li i {
+    font-size: 2vh;
+    padding: 0 0 1.5vh 0;
+    text-align: center;
+    opacity: 1;
+  }
+  .container .pesquisa li a {
+    text-align: center;
+    opacity: 1;
+  }
+  .container .pesquisa .triangle {
+    display: none;
+    width: 0px;
+    height: 0px;
+    border-width: 8vh 0 0 8vh;
+    border-color: transparent transparent transparent rgba(242, 242, 242, 0.801);
+    transform: rotate(0deg);
+    background-color: transparent;
+    border-style: solid;
+    padding: 0;
+  }
+  .container .pesquisa .triangle:hover {
+    cursor: default;
+  }
+  .container .search {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(243, 243, 243, 0.801);
+    margin: 0 2vw 0 2vw;
+    width: auto;
+    padding: 0 3vw;
+    font-size: 2vh;
+    text-align: center;
+  }
+  .container .search .seleção {
+    text-align: left;
+    width: 95%;
+    display: inline;
+    opacity: 1;
+    margin: 2vh 1vw 2vh 1vw;
+    background-color: #fff;
+    font-weight: 500;
+    padding: 1.5vh 0 1.5vh 3vw;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    color: #999;
+  }
+  .container .search .seleção i {
+    display: flex;
+    float: right;
+    padding-right: 3vw;
+    opacity: 0.7;
+  }
+  .container .search .seleção:hover {
+    cursor: pointer;
+  }
+  .container .search .Resultados {
+    color: #fff;
+    border: none;
+    width: 95%;
+    margin: 1.8vh 1vw;
+    font-weight: 500;
+    padding: 1.3vh 0 1vh 0;
+    font-size: 2vh;
+    background-color: #dc312e;
+  }
+  .container .search .Resultados i {
+    display: inline;
+    padding-left: 3vw;
+  }
+  .container .search .Resultados:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0px 7px 15px 1px rgba(220, 49, 46, 0.5);
+  }
+  .container .Anunciar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .container .Anunciar a {
+    background-color: white;
+    padding: 2vh 2vw;
+    font-size: 10vh;
+    font-weight: 900;
+    margin: 2vh 1vw;
+    font-size: 0.9em;
+    width: 90%;
+    font-weight: 600;
+    color: #dc312e;
+  }
+  .container .Anunciar a span {
+    color: #555;
+  }
+  .container .Anunciar a i {
+    padding: 0 0 0 0.3vw;
+  }
+  .Opções {
+    padding: 4vh 14vw;
+    color: #555;
+    font-weight: 400;
+    font-size: 1.7vh;
+  }
+  .Opções span {
+    font-weight: 700;
+    color: #555;
+  }
+  .middle {
+    text-align: center;
+  }
+  .middle .Cards {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 4vh;
+  }
+  .middle .Cards .Detalhes {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.7vh;
+    color: #555;
+    margin: 0 16vw;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  }
+  .middle .Cards .Detalhes .Preço {
+    background-color: #dc312e;
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    margin: -1vh 0 0 -1vw;
+    padding: 0.7vh 1.5vw;
+  }
+  .middle .Cards .Detalhes img {
+    height: 24vh;
+    margin-top: 0;
+    margin-bottom: 1vh;
+  }
+  .middle .Cards .Detalhes a b {
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding-left: 1vw;
+  }
+  .middle .Cards .Detalhes a span {
+    padding: 0 1vw;
+    padding-top: 2vh;
+  }
+  .middle .Cards .Detalhes a span p {
+    margin: 0;
+    padding: 0 0 0 1vw;
+  }
+  .middle .Botão1 {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border: none;
+    margin-top: 7vh;
+    padding: 1.5vh 1.5vw;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #555;
+    font-size: 1.7vh;
+  }
+  .middle .Botão1:hover {
+    color: #dc312e;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 15px 15px -4px rgba(0, 0, 0, 0.54);
+  }
+  footer {
+    margin-top: 15vh;
+    border-top: 2px solid #555;
+    background-color: #f3f3f3;
+  }
+  footer .Media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+  }
+  footer .Media .Notícias {
+    display: none;
+    width: 37%;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #555;
+  }
+  footer .Media .Notícias span {
+    color: #dc312e;
+  }
+  footer .Media .Notícias a {
+    margin-left: 13vw;
+    font-size: 1.7vh;
+    font-weight: 700;
+  }
+  footer .Media .Notícias a i {
+    padding-right: 0.5vw;
+  }
+  footer .Media .Notícias li {
+    margin-left: 11.5vw;
+    font-size: 1.3vh;
+    padding-bottom: 1vh;
+    list-style-type: circle;
+  }
+  footer .Media .Notícias li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  footer .Media .email {
+    font-family: "Helvetica Neue", sans-serif;
+    color: #555;
+    font-size: 1.7vh;
+    font-weight: 700;
+    margin-left: 5vw;
+  }
+  footer .Media .email a {
+    margin-left: 3vw;
+  }
+  footer .Media .email a span {
+    color: #dc312e;
+  }
+  footer .Media .email form {
+    margin-top: 2vh;
+  }
+  footer .Media .email form input {
+    width: auto;
+    padding: 1vh 1.5vw;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.7vh;
+    margin: 0 0 3vh 5vw;
+    color: #555;
+    opacity: 0.7;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+  footer .Media .email form button {
+    background-color: #dc312e;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 1.7vh;
+    margin-left: 0.2vw;
+    padding: 1vh 2.5vw;
+  }
+  footer .Media .email form button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 1px 6px 15px -2px rgba(220, 49, 46, 0.75);
+  }
+  footer .Media .Redes {
+    font-size: 1.7vh;
+    font-weight: 700;
+    color: #555;
+    margin-left: 9vw;
+    margin-bottom: 5vh;
+  }
+  footer .Media .Redes span {
+    color: #dc312e;
+  }
+  footer .Media .Redes i {
+    opacity: 0.8;
+    font-size: 4vh;
+    margin: 1vh 2vw 0 0.7vw;
+    color: #3b5998;
+  }
+  footer .Media .Redes i:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #23527c;
+  }
+  footer .Media .Redes a {
+    opacity: 0.8;
+    font-size: 4vh;
+    margin: 1vh 0 0 0.7vw;
+    color: #55acee;
+  }
+  footer .Media .Redes a:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #337ab7;
+  }
+  footer .Informação {
+    display: none;
+    border-top: 1px solid #e4e1de;
+    margin: 0 13vw 0 13vw;
+    color: #555;
+    font-family: "Helvetica Neue", sans-serif;
+    padding: 3vh 0 4vh 0;
+  }
+  footer .Informação b {
+    padding-left: 15vw;
+    font-size: 1.7vh;
+    font-weight: 700;
+  }
+  footer .Informação p {
+    margin: 0;
+    padding: 0;
+    line-height: 2vh;
+    font-size: 1.2vh;
+    padding-left: 21.5vw;
+  }
+  footer .Informação p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  footer .Informação span {
+    line-height: 2vh;
+    font-size: 1.2vh;
+  }
+  footer .Informação span b {
+    padding-left: 27vw;
+    font-weight: 100;
+    line-height: 2vh;
+    font-size: 1.2vh;
+  }
+  footer .Informação span .Texto {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  footer .Informação span a {
+    margin-top: 1vh;
+    margin-left: 10vw;
+  }
+  footer .Informação span a span {
+    font-weight: bold;
+  }
+  footer .fim {
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .fim img {
+    padding: 3vh 30vw 1vh 30vw;
+    width: 16vh;
+  }
+  footer .fim ul {
+    display: grid;
+    grid-template-columns: 9vw 2vw 29vw 2vw 30vw 2vw 5vw 2vw;
+    color: #fff;
+    padding: 0 0 0 7vw;
+    font-size: 1.5vh;
+    list-style: none;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+  }
+  footer .fim ul li {
+    padding: 0;
+  }
+  footer .fim ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  footer .fim ul span {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vh;
+  }
+  footer .fim span {
+    color: white;
+    font-size: 1.3vh;
+    padding-left: 20vw;
+  }
+  #Venda {
+    margin: 20vh 5vw 0 5vw;
+    color: #dc312e;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 5vh 3vw;
+    text-align: center;
+  }
+  #Venda span {
+    font-size: medium;
+    color: #555;
+    font-weight: 100;
+    text-align: center;
+  }
+  #Venda .Inputs ul {
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #Venda .Inputs ul li {
+    list-style-type: none;
+    font-size: medium;
+    color: #555;
+    margin: 0 5vw 0 0;
+    font-weight: 700;
+  }
+  #Venda .Inputs ul li input {
+    margin: 1vh 0.2vw;
+    border-radius: 2px;
+    height: 3vh;
+    border: 0.5px rgba(128, 128, 128, 0.623) solid;
+  }
+  #Venda .Inputs ul li span {
+    color: #dc312e;
+    font-size: medium;
+    margin-left: 0.3vw;
+  }
+  #Venda .Inputs ul li .Calcular {
+    color: white;
+    border: none;
+    padding: 2vh 3vw;
+    margin-top: 1vh;
+    margin-left: 0.2vw;
+    font-size: larger;
+    font-weight: 700;
+    background-color: #dc312e;
+  }
+  #Venda .Inputs ul li .Calcular:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0px 7px 15px 1px rgba(220, 49, 46, 0.5);
+  }
+  #Venda .Output {
+    margin-top: 5vh;
+  }
+  #Venda .Output ul {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5vh;
+  }
+  #Venda .Output ul li {
+    font-size: larger;
+    color: #dc312e;
+    background-color: rgba(197, 186, 186, 0.514);
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 3vh 0 2vh 0;
+  }
+  #Venda .Output ul li h4 {
+    color: #555;
+    font-size: medium;
+  }
+  #Venda .Output ul li h1 {
+    color: black;
+    font-size: xx-large;
+  }
+  #Venda .Output ul .MuitoBomEstado {
+    border: none;
+  }
+  #Venda #Financiamento {
+    display: block;
+  }
+  #Venda #Financiamento h1 {
+    color: #555;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    margin-top: 15vh;
+    font-size: larger;
+    text-align: center;
+  }
+  #Venda #Financiamento .InputsF {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5vh;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento a {
+    color: #555;
+    font-size: medium;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento a span {
+    color: #dc312e;
+    font-size: medium;
+    margin-left: 0.3vw;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento a .BotaoFinanciamento {
+    color: #fff;
+    border: none;
+    padding: 2vh 2vw;
+    margin-top: 1vh;
+    font-size: larger;
+    font-weight: 700;
+    background-color: #dc312e;
+  }
+  #Venda #Financiamento .InputsF .InputsFinanciamento input {
+    height: 3vh;
+    margin-left: 0.2vw;
+  }
+  #Venda #Resultado {
+    margin: 0;
+    margin-top: 15vh;
+  }
+  #Venda #Resultado ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  #Venda #Resultado ul li {
+    width: 100%;
+    padding: 1vh 3vw;
+    margin-bottom: 5vh;
+    list-style-type: none;
+    background-color: rgba(197, 186, 186, 0.514);
+    border-radius: 10px;
+  }
+  #Venda #Resultado ul li h3 {
+    font-size: larger;
+    text-align: center;
+  }
+  #Venda #Resultado ul li h4 {
+    margin-left: 3vw;
+    color: #555;
+    font-size: medium;
+  }
+}/*# sourceMappingURL=sass.css.map */

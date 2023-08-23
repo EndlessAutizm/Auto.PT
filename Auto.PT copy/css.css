@@ -1,0 +1,14 @@
+li:nth-child(2){
+    color:orange
+}
+
+
+.item::first-letter{
+    
+    color:red
+}
+
+#demo.para{
+
+    color: red;
+}
